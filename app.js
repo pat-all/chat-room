@@ -24,12 +24,11 @@ const PORT = process.env.PORT || config.get("port") || 80;
 // mongodb URI
 const MONGOURI = config.get("mongoURI");
 
-if (process.env.NODE_ENV === "production") {
-  app.use("/", express.static(path.join(__dirname, "web-client", "build")));
-  app.get("*", (req, res) => {
-    res.sendfile(path.resolve(__dirname, "web-client", "build", "index.html"));
-  });
-}
+app.use("/", express.static(path.join(__dirname, "web-client", "build")));
+app.get("*", (req, res) => {
+  res.sendfile(path.resolve(__dirname, "web-client", "build", "index.html"));
+});
+
 // connecting to data base and run server
 async function runServerWithDB() {
   try {
