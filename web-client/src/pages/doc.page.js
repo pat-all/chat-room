@@ -5,7 +5,7 @@ const DocumentationPage = () => {
   return (
     <div className='container'>
       <h3>Documentation</h3>
-      <a>Project on github</a>
+      <a href='https://github.com/pat-all/chat-room'>Project on github</a>
       <p>This is chat room restful api demonstration web-app</p>
       <h5>Auth API</h5>
       <p>
