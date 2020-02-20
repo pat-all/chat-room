@@ -1,0 +1,6 @@
+{
+  "port": 3300,
+  "mongoURI": "mongodb+srv://admin:admin1234@cluster0-uey7x.gcp.mongodb.net/chat?retryWrites=true&w=majority",
+  "secret": "super secret string",
+  "messagesOnList": 10
+}
