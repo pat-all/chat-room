@@ -51,14 +51,14 @@ const MessagesList = ({ messages, deleteMessageHandler }) => {
                     Delete
                   </button>
                 </div>
-                <div className='row'>
+                {/*<div className='row'>
                   <button
                     style={{ marginLeft: 10 }}
                     className='btn waves-effect waves-light light-blue darken-4'
                   >
                     Update
                   </button>
-                </div>
+                </div>*/}
               </div>
             </div>
           </li>

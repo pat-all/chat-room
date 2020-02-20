@@ -19,7 +19,7 @@ app.use("/api/messages", messagesRoutes);
 app.use("/api/auth", authRoutes);
 
 // server port
-const PORT = config.get("port") || 3333;
+const PORT = process.env.PORT || config.get("port") || 80;
 
 // mongodb URI
 const MONGOURI = config.get("mongoURI");
