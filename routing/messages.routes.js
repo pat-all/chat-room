@@ -104,6 +104,7 @@ router.put("/single", [messageTextValidation], async (req, res) => {
     const message = await Message.findById(id);
     if (message) {
       message.text = text;
+      message.updated = Date.now();
       await message.save();
       res.status(200).json({ message: "message was updeted", data: message });
     } else {

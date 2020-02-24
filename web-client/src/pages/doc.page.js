@@ -28,9 +28,7 @@ const DocumentationPage = () => {
       </p>
       <p>
         <blockquote>POST: /api/auth/login</blockquote>
-        authancicates user, and returns him a <i>token</i>,{" "}
-        <span style={redColor}>whitch is not used in this web-app</span>,
-        required parameters:
+        authancicates user, and returns him a <i>token</i>, required parameters:
         <ul>
           <li>
             <b>username</b> - name of a user
@@ -86,10 +84,7 @@ const DocumentationPage = () => {
       </p>
 
       <p>
-        <blockquote>
-          PUT: /api/messages/single -{" "}
-          <span style={redColor}>is not implemented in this web-app(!)</span>
-        </blockquote>
+        <blockquote>PUT: /api/messages/single</blockquote>
         updates existing message, required parameters:
         <ul>
           <li>

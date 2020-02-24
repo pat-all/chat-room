@@ -67,7 +67,7 @@ const MessagesControlCard = ({
               disabled={isFetching}
               onClick={listNumClickHandler}
             >
-              Get List
+              Get
             </button>
           </div>
         </div>
@@ -89,7 +89,7 @@ const MessagesControlCard = ({
               onClick={singleIdClickHandler}
               disabled={isFetching}
             >
-              Get Single
+              Get
             </button>
           </div>
         </div>

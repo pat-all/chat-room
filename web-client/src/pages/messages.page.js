@@ -76,12 +76,25 @@ const MesssagesPage = () => {
     }
   };
 
+  const updateMessageHandler = async (id, text) => {
+    try {
+      const res = await request("/api/messages/single", "PUT", { id, text });
+      const newMessage = res.data && res.data;
+      const index = messages.findIndex(message => message._id === id);
+      messages[index] = newMessage;
+      setMessages([...messages]);
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
+
   return (
     <div className='row'>
       <div className='col s6 m6'>
         <MessagesList
           messages={messages}
           deleteMessageHandler={deleteMessageHandler}
+          updateMessageHandler={updateMessageHandler}
         />
       </div>
       <div className='col s6 m6'>
